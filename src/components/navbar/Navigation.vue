@@ -79,6 +79,9 @@ header {
   margin: 0;
   z-index: 99;
   width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
   position: fixed;
   transition: .5s ease all;
   color: #333;
@@ -112,9 +115,10 @@ header {
 
         }
         .link {
-          font-size: 14px;
+          font-size: 14px bolder;
           transition: .5s ease all;
           padding-bottom: 4px;
+
           border-bottom: 1px solid transparent;
            &:hover {
             border-color: #333;
@@ -165,13 +169,14 @@ header {
           width: 100%;
           max-width: 250px;
           height: 100%;
-          background-color: #00D7FF;
+          background-color: #37E2D5;
           top: 0;
           left: 0;
 
 
             li {
               margin-left: 0;
+              border-bottom: 1px solid white;
                .link {
                 color: #333;
 
@@ -204,12 +209,20 @@ header {
 }
 
 .scrolled-nav {
-  background-color: #000;
+  background-color: transparent;
   box-shadow: 0 4px 6px -1px rgba(0 , 0, 0, 0.1), 0 2px 4px -1px rgba(0 , 0, 0, 0.06);
+  
 
     nav {
       padding: 8px 0;
-
+        .link {
+           color: #4C3A51;
+            text-shadow: 1px 1px #fff;
+           &:hover {
+            border-color: #CDF0EA;
+            box-shadow: 0px 2px #fff ;
+           }
+        }
         .branding {
           img {
             width: 40px;
