@@ -2,9 +2,9 @@
 <div class="footer-basic ">
     <footer>
         <div class="socials container">
-            <a href="#"><img class="icons"  alt=""></a>
-            <a href="#"><img class="icons"  alt=""></a>
-            <a href="#"><img class="icons"  alt=""></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <ul class="list-inline">
             <li class="list-inline-item"><router-link to="/">Home</router-link></li>
@@ -13,7 +13,7 @@
             <li class="list-inline-item"><router-link to="/">Terms</router-link></li>
             <li class="list-inline-item"><router-link to="/">Privacy Policy</router-link></li>
         </ul>
-        <p class="copyright">Pide & Lahmacun © 2008</p>
+        <p class="copyright">ABTT © 2008</p>
     </footer>
 </div>
 </template>
@@ -98,14 +98,17 @@ footer {
     margin-bottom:0;
   }
 
-  .icons {
-    width: 24px ;
-    height: 24px;
-    
-  }
+  
 
   .socials {
     text-align: end;
+      a{
+        .fa-brands {
+          font-size: 24px;
+          color: #000;
+          padding: 2px;
+        }
+      }
   }
 @media only screen and (max-width: 992px) {
     .footer-basic {

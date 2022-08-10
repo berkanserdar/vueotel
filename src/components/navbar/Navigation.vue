@@ -1,8 +1,8 @@
 <template>
     <header :class="{'scrolled-nav': scrolledNav}">
-      <nav>
+      <nav class="nav">
         <div class="branding">
-          <img src="@/assets/logo.png" alt="">
+          <h1 class="logo"><span class="logo__Fs">NAKRE</span>B</h1>
         </div>
             <ul v-show="!mobile" class="navigation">
               <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
@@ -74,6 +74,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.nav {
+  margin: 0 auto;
+}
 header {
   background-color: #fff;
   margin: 0;
@@ -118,8 +121,8 @@ header {
           font-size: 14px bolder;
           transition: .5s ease all;
           padding-bottom: 4px;
-
           border-bottom: 1px solid transparent;
+
            &:hover {
             border-color: #333;
            }
@@ -129,9 +132,19 @@ header {
           display: flex;
           align-items: center;
 
-            img {
-              width: 60px;
+            .logo {
+              font: 52px bold;
+              color: #333;
               transition: .5s ease all;
+              border-bottom: 1px solid transparent;
+
+                &:hover {
+                  border-color: #333;
+                }
+
+                &__Fs { 
+                  font-size: 27px;
+                  }
             }
         }
 
@@ -215,19 +228,28 @@ header {
 
     nav {
       padding: 8px 0;
+
         .link {
-           color: #4C3A51;
+            color: #4C3A51;
             text-shadow: 1px 1px #fff;
-           &:hover {
-            border-color: #CDF0EA;
-            box-shadow: 0px 2px #fff ;
-           }
+
+              &:hover {
+                border-color: #CDF0EA;
+                box-shadow: 0px 2px #fff ;
+              }
         }
         .branding {
-          img {
-            width: 40px;
-            box-shadow: 0 4px 6px -1px rgba(0 , 0, 0, 0.1), 0 2px 4px -1px rgba(0 , 0, 0, 0.06);
-          }
+
+                  .logo {
+                    font: 27px bold;
+                    text-shadow: 1px 1px #fff;
+
+                        &:hover {
+                          border-color: #CDF0EA;
+                          box-shadow: 0px .5px #fff ;
+                        }
+                      
+                  }
         }
     }
 }

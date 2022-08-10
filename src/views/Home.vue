@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <Carousel class="carousel">
+    <Carousel class="home__Carousel">
     </Carousel>
-    <OverlayImage class="overlayImage">
+    <OverlayImage class="home__OverlayImage">
     </OverlayImage>
   </div>
 </template>
@@ -22,10 +22,10 @@ export default {
 </script>
 
 <style scoped>
-.carousel {
+.home__Carousel {
   margin-bottom: 50px;
 }
-.overlayImage {
+.home__OverlayImage {
   margin-bottom: 50px;
 }
 </style>
